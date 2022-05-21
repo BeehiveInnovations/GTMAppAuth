@@ -23,11 +23,7 @@
 #endif
 
 #if SWIFT_PACKAGE || GTMAPPAUTH_USE_MODULAR_IMPORT
-#if TARGET_OS_IOS
-@import AppAuthCore;
-#else
 @import AppAuth;
-#endif
 #elif GTMAPPAUTH_USER_IMPORTS
 #import "AppAuthCore.h"
 #else

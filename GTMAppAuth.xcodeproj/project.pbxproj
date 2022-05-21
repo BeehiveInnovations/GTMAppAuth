@@ -26,10 +26,9 @@
 		299DAF6E28390FE100380843 /* GTMAppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 299DAF5D28390FE100380843 /* GTMAppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		299DAF6F28390FE100380843 /* GTMAppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 299DAF5D28390FE100380843 /* GTMAppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		299DAF76283912A600380843 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DAF75283912A600380843 /* AppAuth.xcframework */; };
-		299DAF79283912AE00380843 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DAF75283912A600380843 /* AppAuth.xcframework */; };
-		299DAF81283912FB00380843 /* AppAuthCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DAF80283912FB00380843 /* AppAuthCore.xcframework */; };
 		299DB01428391E7D00380843 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DB01328391E7D00380843 /* GTMSessionFetcher.xcframework */; };
 		299DB01728391E8200380843 /* GTMSessionFetcher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DB01328391E7D00380843 /* GTMSessionFetcher.xcframework */; };
+		29D459B52839A3DD00CE0E63 /* AppAuth.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299DAF75283912A600380843 /* AppAuth.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +62,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				299DAF81283912FB00380843 /* AppAuthCore.xcframework in Frameworks */,
-				299DAF79283912AE00380843 /* AppAuth.xcframework in Frameworks */,
 				299DB01728391E8200380843 /* GTMSessionFetcher.xcframework in Frameworks */,
+				29D459B52839A3DD00CE0E63 /* AppAuth.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

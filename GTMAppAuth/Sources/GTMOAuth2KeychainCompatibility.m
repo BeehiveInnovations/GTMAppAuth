@@ -28,11 +28,7 @@
 
 
 #if SWIFT_PACKAGE || GTMAPPAUTH_USE_MODULAR_IMPORT
-#if TARGET_OS_IOS
-@import AppAuthCore;
-#else
 @import AppAuth;
-#endif
 #if XCFRAMEWORK
 @import GTMSessionFetcher;
 #else
