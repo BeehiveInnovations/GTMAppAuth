@@ -23,7 +23,11 @@
 #elif __has_include("../GTMSessionFetcher.h")
   #import "../GTMSessionFetcher.h"
 #else
+#if XCFRAMEWORK
+@import GTMSessionFetcher;
+#else
 # error "Failed to find GTMSessionFetcher"
+#endif
 #endif
 
 @class OIDAuthState;

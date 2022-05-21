@@ -16,7 +16,11 @@
         limitations under the License.
  */
 
+#if XCFRAMEWORK
+#import "Public/GTMAppAuth/GTMKeychain.h"
+#else
 #import "GTMAppAuth/Sources/Public/GTMAppAuth/GTMKeychain.h"
+#endif
 
 #import <Security/Security.h>
 

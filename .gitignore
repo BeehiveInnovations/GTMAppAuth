@@ -10,3 +10,5 @@ Package.pins
 Package.resolved
 .swiftpm
 .build
+/GTMAppAuth.xcframework/
+/archives/

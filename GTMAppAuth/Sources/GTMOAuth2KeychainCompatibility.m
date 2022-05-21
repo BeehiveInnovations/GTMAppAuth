@@ -16,14 +16,28 @@
         limitations under the License.
  */
 
+#if XCFRAMEWORK
+#import "Public/GTMAppAuth/GTMOAuth2KeychainCompatibility.h"
+#import "Public/GTMAppAuth/GTMAppAuthFetcherAuthorization.h"
+#import "Public/GTMAppAuth/GTMKeychain.h"
+#else
 #import "GTMAppAuth/Sources/Public/GTMAppAuth/GTMOAuth2KeychainCompatibility.h"
-
 #import "GTMAppAuth/Sources/Public/GTMAppAuth/GTMAppAuthFetcherAuthorization.h"
 #import "GTMAppAuth/Sources/Public/GTMAppAuth/GTMKeychain.h"
+#endif
+
 
 #if SWIFT_PACKAGE || GTMAPPAUTH_USE_MODULAR_IMPORT
+#if TARGET_OS_IOS
 @import AppAuthCore;
+#else
+@import AppAuth;
+#endif
+#if XCFRAMEWORK
+@import GTMSessionFetcher;
+#else
 @import GTMSessionFetcherCore;
+#endif
 #elif GTMAPPAUTH_USER_IMPORTS
 #import "AppAuthCore.h"
 #import "GTMSessionFetcher.h"
