@@ -153,7 +153,8 @@ static NSString *const kOOBString = @"urn:ietf:wg:oauth:2.0:oob";
                                                scope:dict[kOAuth2ScopeKey]
                                         refreshToken:dict[kOAuth2RefreshTokenKey]
                                         codeVerifier:nil
-                                additionalParameters:additionalParameters];
+                                additionalParameters:additionalParameters
+                                   additionalHeaders:nil];
   OIDTokenResponse *tokenResponse =
       [[OIDTokenResponse alloc] initWithRequest:tokenRequest parameters:dict];
   OIDAuthState *authState = [[OIDAuthState alloc] initWithAuthorizationResponse:authResponse

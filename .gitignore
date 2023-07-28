@@ -12,3 +12,7 @@ Package.resolved
 .build
 /GTMAppAuth.xcframework/
 /archives/
+/.DerivedData/
+/DerivedData/
+*.xcuserstate
+/GTMAppAuth.xcodeproj/project.xcworkspace/xcuserdata/fahad.xcuserdatad/UserInterfaceState.xcuserstate
