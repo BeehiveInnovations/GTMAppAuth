@@ -20,10 +20,10 @@ import PackageDescription
 let package = Package(
     name: "GTMAppAuth",
     platforms: [
-        .macOS(.v10_12),
-        .iOS(.v9),
-        .tvOS(.v9),
-        .watchOS(.v6)
+        .macOS("12.0"),
+        .iOS("15.0"),
+        .tvOS("15.0"),
+        .watchOS("9.0")
     ],
     products: [
         .library(
